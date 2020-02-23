@@ -1,44 +1,53 @@
 package com.company;
 
 import javax.swing.*;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class PetName {
-    List<String> names = new ArrayList<>();
+    Map<String,String> names = new HashMap();
 
 
 
     public PetName() throws IOException {
 
     }
-    public void showAllNames() throws IOException {
-//        Files.lines(Paths.get("pet-names-4.txt")).forEach(System.out::println);
+    public static void showAllNames() throws IOException {
 
-        names = Files.lines(Paths.get("pet-names-4.txt"))
+        List<String> list = new ArrayList<>();
+        Pattern pattern = Pattern.compile("\\s+");
+        Files.lines(Paths.get("pet-names-4.txt"))
+                .flatMap (s -> Stream.of(s.split(". ")))
+                .flatMap(line -> pattern.splitAsStream(line))
+                .filter(s -> s.length() > 3)
+                .flatMap (s -> Stream.of(s.split("\"")))
+                .flatMap (s -> Stream.of(s.split(",")))
+                .collect(Collectors.toList())
+                .forEach(s -> list.add(s));
 
-                .flatMap (s -> Stream.of(s.split(", ")))
-                .sorted((s1, s2) -> {
-                    return s1.compareTo(s2);
-                })
-                .collect(Collectors.toList());
-
-        names.forEach(System.out::println);
     }
 }
 
 class TestClass{
     public static void main(String[] args) throws IOException {
-        PetName petName = new PetName();
-        petName.showAllNames();
+
+        List<String> list = new ArrayList<>();
+        Pattern pattern = Pattern.compile("\\s+");
+       Files.lines(Paths.get("pet-names-4.txt"))
+                .flatMap (s -> Stream.of(s.split(". ")))
+                .flatMap(line -> pattern.splitAsStream(line))
+                .filter(s -> s.length() > 3)
+                .flatMap (s -> Stream.of(s.split("\"")))
+                .flatMap (s -> Stream.of(s.split(",")))
+                .collect(Collectors.toList())
+                .forEach(s -> list.add(s));
+
 
     }
 }
