@@ -5,6 +5,7 @@ import com.company.pets.Pet;
 import com.company.pets.RandomPetName;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -27,27 +28,36 @@ public class Main {
                 new PetOwner("Sam",randomPet()),
                 new PetOwner("Jasmine",randomPet())
         );
-
-        randomPet();
-
+/*=======================================================================*/
+//        owners.stream()
+//                .map(s -> s.toString() + s.pets)
+//                .collect(Collectors.toList())
+//                .forEach(System.out::println);
+/*=======================================================================*/
+//        owners.stream()
+//                .map(s -> s.toString()+ s.pets)
+//                .sorted((s1,s2) -> s1.compareTo(s2))
+//                .collect(Collectors.toList())
+//                .forEach(System.out::println);
+/*=======================================================================*/
         owners.stream()
-                .map(s -> s.toString())
+                .map(s -> s.toStringUpperCase()+ s.getPets())
+                .sorted()
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
-//
-////        System.out.println(mike.toString());
+
 
     }
     public static List<Pet> randomPet(){
         Random random = new Random();
         int petNr = random.nextInt(5);
         List<Pet> pets = new ArrayList<>();
-        String[] type = {"Dog","Cat"};
+        String[] type = {"Dog:","Cat:","Parrot:","T-Rex:","Crocodile:"};
 
         for (int i = 0; i < petNr; i++){
             int randomType = random.nextInt(type.length);
             pets.add(new Pet(RandomPetName.getName(),type[randomType]));
         }
-     return pets;
+     return  pets;
     }
 }

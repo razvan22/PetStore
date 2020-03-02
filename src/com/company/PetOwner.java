@@ -26,16 +26,19 @@ public class PetOwner {
         return age;
     }
 
+    public List<Pet> getPets() {
+        return  pets;
+    }
 
     public String toStringUpperCase() {
-        return String.format("Person %s (%s)",
-                getName().toUpperCase(),getAge()
-        );
+        return String.format("Person %s (%d) owns the animals:",
+                getName().toUpperCase() ,getAge());
+
     }
 
     @Override
     public String toString() {
-        return String.format("Person %s (%s) owns the animals:",
+        return String.format("Person %s (%d) owns the animals:",
                 getName(),getAge());
     }
 }
