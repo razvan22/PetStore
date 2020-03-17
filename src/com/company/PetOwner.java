@@ -5,8 +5,9 @@ import com.company.pets.Pet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
-public class PetOwner {
+public class PetOwner{
     private String name;
     private int age;
     public List<Pet> pets = new ArrayList<>();
@@ -27,7 +28,7 @@ public class PetOwner {
     }
 
     public List<Pet> getPets() {
-        return  pets;
+        return pets;
     }
 
     public String toStringUpperCase() {
@@ -41,4 +42,5 @@ public class PetOwner {
         return String.format("Person %s (%d) owns the animals:",
                 getName(),getAge());
     }
+
 }

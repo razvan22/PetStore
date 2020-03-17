@@ -2,11 +2,16 @@ package com.company.pets;
 
 
 
-public  class Pet {
+public  class Pet implements Comparable<Pet> {
     private String petName ;
     private String type;
 
-    public Pet(String petName, String type) {
+    @Override
+    public int compareTo(Pet pet) {
+        return this.getType().compareToIgnoreCase(pet.petName);
+    }
+
+    public Pet( String type ,String petName) {
         this.petName = petName;
         this.type = type;
     }

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="548337c7-259c-404b-b0fd-dc83e9c0835c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pets/RandomPetName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/Pet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/PetName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/TestClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PetStore/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/PetOwner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PetStore/com/company/PetOwner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/pets/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PetStore/com/company/pets/Pet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/PetOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PetOwner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/pets/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/pets/Pet.java" afterDir="false" />
@@ -43,14 +38,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nickname\Documents\JAVA\PetStore\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nickname\Documents\JAVA\PetStore" />
       <recent name="C:\Users\Nickname\Documents\JAVA\PetStore\.idea" />
       <recent name="C:\Users\Nickname\Documents\JAVA\PetStore\src" />
       <recent name="C:\Users\Nickname\Documents\JAVA\PetStore\out" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nickname\Documents\JAVA\PetStore\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -64,12 +59,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.pets.Pet" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Test" />
       <module name="PetStore" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.pets.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,7 +75,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Pet" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -98,46 +93,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582529019183">
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584296160124">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1582529019183" />
-    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1582545009639">
+    <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1584296160124" />
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1584448657036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1582545009639" />
-    <state width="1281" height="155" key="GridCell.Tab.0.bottom" timestamp="1582545240211">
+    <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1584448657036" />
+    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1584467604802">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="155" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582545240211" />
-    <state width="1281" height="155" key="GridCell.Tab.0.center" timestamp="1582545240211">
+    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584467604802" />
+    <state width="1281" height="420" key="GridCell.Tab.0.bottom" timestamp="1584467545950">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="155" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582545240211" />
-    <state width="1281" height="155" key="GridCell.Tab.0.left" timestamp="1582545240211">
+    <state width="1281" height="420" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
+    <state width="1281" height="420" key="GridCell.Tab.0.center" timestamp="1584467545950">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="155" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582545240211" />
-    <state width="1281" height="155" key="GridCell.Tab.0.right" timestamp="1582545240211">
+    <state width="1281" height="420" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
+    <state width="1281" height="420" key="GridCell.Tab.0.left" timestamp="1584467545950">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="155" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582545240211" />
-    <state width="1281" height="318" key="GridCell.Tab.1.bottom" timestamp="1582541187305">
+    <state width="1281" height="420" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
+    <state width="1281" height="420" key="GridCell.Tab.0.right" timestamp="1584467545950">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="318" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582541187305" />
-    <state width="1281" height="318" key="GridCell.Tab.1.center" timestamp="1582541187304">
+    <state width="1281" height="420" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
+    <state width="1281" height="236" key="GridCell.Tab.1.bottom" timestamp="1584437960942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="318" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582541187304" />
-    <state width="1281" height="318" key="GridCell.Tab.1.left" timestamp="1582541187304">
+    <state width="1281" height="236" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584437960942" />
+    <state width="1281" height="236" key="GridCell.Tab.1.center" timestamp="1584437960942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="318" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582541187304" />
-    <state width="1281" height="318" key="GridCell.Tab.1.right" timestamp="1582541187304">
+    <state width="1281" height="236" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1584437960942" />
+    <state width="1281" height="236" key="GridCell.Tab.1.left" timestamp="1584437960942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="318" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582541187304" />
+    <state width="1281" height="236" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1584437960942" />
+    <state width="1281" height="236" key="GridCell.Tab.1.right" timestamp="1584437960942">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1281" height="236" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584437960942" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1582528981537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -146,5 +145,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1582488998957" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1584444739260">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584444739260" />
   </component>
 </project>

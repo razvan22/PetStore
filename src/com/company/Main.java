@@ -4,12 +4,9 @@ package com.company;
 import com.company.pets.Pet;
 import com.company.pets.RandomPetName;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,29 +32,45 @@ public class Main {
 //                .forEach(System.out::println);
 /*=======================================================================*/
 //        owners.stream()
-//                .map(s -> s.toString()+ s.pets)
-//                .sorted((s1,s2) -> s1.compareTo(s2))
-//                .collect(Collectors.toList())
+//                .filter(c -> c.pets.size() != 0)
+//                .map(petOwner -> petOwner.toString() +  petOwner.pets.stream()
+//                        .map(pet -> pet.toString())
+//                        .sorted()
+//                        .collect(Collectors.toList()))
+//                .sorted()
 //                .forEach(System.out::println);
 /*=======================================================================*/
-        owners.stream()
-                .map(s -> s.toStringUpperCase()+ s.getPets())
-                .sorted()
-                .collect(Collectors.toList())
-                .forEach(System.out::println);
 
+        PetOwner mike =   new PetOwner("Mike",randomPet());
+
+        Comparator<PetOwner> ascendingListFormat = (petA, petB) -> petA.pets.size() - petB.pets.size();
+        Consumer<PetOwner> filterChar = owner -> {
+            if (owner.pets.size() == 1){
+
+               String pet  = owner.pets.toString().replaceAll("[\\[\\]]", "");
+                System.out.println(owner +" "+ pet);
+            }else{
+                System.out.println(owner + owner.getPets().toString());
+            }
+        };
+        owners.stream()
+                .sorted(ascendingListFormat)
+                .filter(c -> c.pets.size() != 0)
+                .forEach(filterChar);
 
     }
+
     public static List<Pet> randomPet(){
         Random random = new Random();
         int petNr = random.nextInt(5);
         List<Pet> pets = new ArrayList<>();
-        String[] type = {"Dog:","Cat:","Parrot:","T-Rex:","Crocodile:"};
+        String[] type = {"Dog:","Cat:","Parrot:","TRex:","Crocodile:"};
 
         for (int i = 0; i < petNr; i++){
             int randomType = random.nextInt(type.length);
-            pets.add(new Pet(RandomPetName.getName(),type[randomType]));
+            pets.add(new Pet(type[randomType],RandomPetName.getName()));
         }
-     return  pets;
+        pets = pets.stream().sorted().collect(Collectors.toList());
+     return pets;
     }
 }
