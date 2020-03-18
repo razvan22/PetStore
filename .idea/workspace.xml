@@ -4,11 +4,7 @@
     <list default="true" id="548337c7-259c-404b-b0fd-dc83e9c0835c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PetStore/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/PetOwner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PetStore/com/company/PetOwner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PetStore/com/company/pets/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PetStore/com/company/pets/Pet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/PetOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/PetOwner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/pets/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/pets/Pet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,20 @@
       <option name="presentableId" value="Default" />
       <updated>1580290788556</updated>
     </task>
+    <task id="LOCAL-00001" summary="v2.0">
+      <created>1584467647541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584467647541</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="v2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2.0" />
   </component>
   <component name="WindowStateProjectService">
     <state x="95" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584296160124">
@@ -101,26 +110,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1584448657036" />
-    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1584467604802">
+    <state x="195" y="0" width="1085" height="680" key="CommitChangelistDialog2" timestamp="1584467646264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584467604802" />
-    <state width="1281" height="420" key="GridCell.Tab.0.bottom" timestamp="1584467545950">
+    <state x="195" y="0" width="1085" height="680" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584467646264" />
+    <state width="1281" height="14" key="GridCell.Tab.0.bottom" timestamp="1584517614613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="420" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
-    <state width="1281" height="420" key="GridCell.Tab.0.center" timestamp="1584467545950">
+    <state width="1281" height="14" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584517614613" />
+    <state width="1281" height="14" key="GridCell.Tab.0.center" timestamp="1584517614613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="420" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
-    <state width="1281" height="420" key="GridCell.Tab.0.left" timestamp="1584467545950">
+    <state width="1281" height="14" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584517614613" />
+    <state width="1281" height="14" key="GridCell.Tab.0.left" timestamp="1584517614612">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="420" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
-    <state width="1281" height="420" key="GridCell.Tab.0.right" timestamp="1584467545950">
+    <state width="1281" height="14" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584517614612" />
+    <state width="1281" height="14" key="GridCell.Tab.0.right" timestamp="1584517614613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="420" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584467545950" />
+    <state width="1281" height="14" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584517614613" />
     <state width="1281" height="236" key="GridCell.Tab.1.bottom" timestamp="1584437960942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

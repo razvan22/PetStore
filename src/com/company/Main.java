@@ -26,37 +26,36 @@ public class Main {
                 new PetOwner("Jasmine",randomPet())
         );
 /*=======================================================================*/
-//        owners.stream()
-//                .map(s -> s.toString() + s.pets)
-//                .collect(Collectors.toList())
-//                .forEach(System.out::println);
+        owners.stream()
+                .map(s -> s.toString() + s.pets)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+        System.out.println("=======================================================================");
 /*=======================================================================*/
-//        owners.stream()
-//                .filter(c -> c.pets.size() != 0)
-//                .map(petOwner -> petOwner.toString() +  petOwner.pets.stream()
-//                        .map(pet -> pet.toString())
-//                        .sorted()
-//                        .collect(Collectors.toList()))
-//                .sorted()
-//                .forEach(System.out::println);
+        owners.stream()
+                .filter(c -> c.pets.size() != 0)
+                .map(petOwner -> petOwner.toString() +  petOwner.pets.stream()
+                        .map(pet -> pet.toString())
+                        .sorted()
+                        .collect(Collectors.toList()))
+                .sorted()
+                .forEach(System.out::println);
+        System.out.println("=======================================================================");
 /*=======================================================================*/
-
-        PetOwner mike =   new PetOwner("Mike",randomPet());
 
         Comparator<PetOwner> ascendingListFormat = (petA, petB) -> petA.pets.size() - petB.pets.size();
-        Consumer<PetOwner> filterChar = owner -> {
+        Consumer<PetOwner> filterOwnerWitOnePet = owner -> {
             if (owner.pets.size() == 1){
-
-               String pet  = owner.pets.toString().replaceAll("[\\[\\]]", "");
-                System.out.println(owner +" "+ pet);
+                String pet  = owner.pets.toString().replaceAll("[\\[\\]]", "");
+                System.out.println(owner.toStringUpperCase() +" "+ pet);
             }else{
-                System.out.println(owner + owner.getPets().toString());
+                System.out.println(owner.toStringUpperCase() + owner.getPets().toString());
             }
         };
         owners.stream()
                 .sorted(ascendingListFormat)
                 .filter(c -> c.pets.size() != 0)
-                .forEach(filterChar);
+                .forEach(filterOwnerWitOnePet);
 
     }
 
