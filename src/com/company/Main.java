@@ -44,6 +44,7 @@ public class Main {
 /*=======================================================================*/
 
         Comparator<PetOwner> ascendingListFormat = (petA, petB) -> petA.pets.size() - petB.pets.size();
+
         Consumer<PetOwner> filterOwnerWitOnePet = owner -> {
             if (owner.pets.size() == 1){
                 String pet  = owner.pets.toString().replaceAll("[\\[\\]]", "");
@@ -52,6 +53,7 @@ public class Main {
                 System.out.println(owner.toStringUpperCase() + owner.getPets().toString());
             }
         };
+
         owners.stream()
                 .sorted(ascendingListFormat)
                 .filter(c -> c.pets.size() != 0)
